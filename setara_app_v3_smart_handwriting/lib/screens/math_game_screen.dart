@@ -15,10 +15,10 @@ class _MathGameScreenState extends State<MathGameScreen> {
   String _feedbackMessage = "";
 
   void _checkHandwriting() {
-    setState({
-      _isAnswerChecked = true,
+    setState(() {
+      _isAnswerChecked = true;
       // در این نسخه هوشمند، اگر کودک روی بوم خطی کشیده باشد یعنی تلاش کرده است
-      _isSuccess = _points.isNotEmpty,
+      _isSuccess = _points.isNotEmpty;
       _feedbackMessage = _points.isNotEmpty 
           ? 'آفرین! جواب درست است و خط شما عالی بود 🌟' 
           : 'عزیزم هنوز چیزی ننوشتی! دوباره کوشش کن.',
